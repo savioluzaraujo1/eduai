@@ -2,11 +2,12 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Brain, ChevronLeft, Code, Network, Rocket, Briefcase } from "lucide-react"
+import { Brain, ChevronLeft, Code, Network, Rocket, Briefcase } from 'lucide-react'
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Footer from "@/components/footer"
+import Image from "next/image"
 
 export default function WebinarPage() {
   const [activeSection, setActiveSection] = useState("sobre")
@@ -227,9 +228,11 @@ export default function WebinarPage() {
                   </CardHeader>
                   <CardContent className="flex flex-col items-center">
                     <div className="bg-white p-4 rounded-lg mb-6">
-                      <img
+                      <Image
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-11%20at%2001.57.41-vBrFUjgnuwO9achrTLKIJKL4UIhdbI.jpeg"
                         alt="QR Code para o grupo do Telegram"
+                        width={256}
+                        height={256}
                         className="w-64 h-64"
                       />
                     </div>

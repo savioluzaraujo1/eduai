@@ -1,0 +1,102 @@
+
+
+=================================================
+
+## 5. COMANDOS PARA CONFIGURAÇÃO E INSTALAÇÃO LOCAL
+=================================================
+
+### Requisitos do sistema:
+- Node.js 18.x ou superior
+- npm 9.x ou superior (ou yarn 1.22.x ou superior)
+- Git
+
+### 1. Clonar o repositório (se já tiver no GitHub)
+
+# Substitua 'seu-usuario' e 'nome-do-repositorio' pelos valores corretos
+git clone https://github.com/seu-usuario/nome-do-repositorio.git eduai
+cd eduai
+
+### 2. Instalar dependências
+
+# Usando npm
+npm install
+
+# OU usando yarn
+yarn install
+
+### 3. Configurar variáveis de ambiente
+
+# Criar arquivo .env.local
+touch .env.local
+
+# Editar o arquivo .env.local com seu editor preferido
+# Exemplo: 
+# NEXT_PUBLIC_APP_URL=http://localhost:3000
+# OPENAI_API_KEY=sua-chave-api-aqui
+
+### 4. Executar o projeto em modo de desenvolvimento
+
+# Usando npm
+npm run dev
+
+# OU usando yarn
+yarn dev
+
+# O projeto estará disponível em http://localhost:3000
+
+### 5. Compilar o projeto para produção
+
+# Usando npm
+npm run build
+
+# OU usando yarn
+yarn build
+
+### 6. Iniciar o servidor de produção localmente
+
+# Usando npm
+npm start
+
+# OU usando yarn
+yarn start
+
+### 7. Executar testes (se configurados)
+
+# Usando npm
+npm test
+
+# OU usando yarn
+yarn test
+
+### 8. Verificar e corrigir problemas de linting
+
+# Usando npm
+npm run lint
+
+# OU usando yarn
+yarn lint
+
+### 9. Atualizar dependências (quando necessário)
+
+# Verificar atualizações disponíveis
+npm outdated
+
+# Atualizar todas as dependências para a versão mais recente
+npm update
+
+### 10. Comandos específicos para o projeto EduAI
+
+# Limpar o cache do Next.js (útil para resolver problemas)
+rm -rf .next
+
+# Reinstalar node_modules (em caso de problemas)
+rm -rf node_modules
+rm -f package-lock.json # ou yarn.lock se estiver usando yarn
+npm install # ou yarn install
+
+### 11. Configuração de integração com OpenAI (se aplicável)
+
+# Certifique-se de que a variável OPENAI_API_KEY está configurada no .env.local
+# Para testar a conexão com a API da OpenAI, você pode criar um script de teste:
+
+# Exemplo de script de teste (salve como test-openai.js):

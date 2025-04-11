@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { X, Brain, User, Lock, AlertCircle } from "lucide-react"
+import { X, Brain, User, Lock, AlertCircle } from 'lucide-react'
 import { useRouter } from "next/navigation"
 
 interface LoginModalProps {
@@ -129,12 +129,12 @@ export default function LoginModal({ onClose }: LoginModalProps) {
           <div className="text-center text-xs text-slate-400 mt-4 bg-slate-800/60 p-3 rounded-md backdrop-blur-sm">
             <p className="font-medium mb-1">Demonstração:</p>
             <p>
-              Professor: usuário <span className="text-cyan-400">"professor"</span>, senha{" "}
-              <span className="text-cyan-400">"professor"</span>
+              Professor: usuário <span className="text-cyan-400">&quot;professor&quot;</span>, senha{" "}
+              <span className="text-cyan-400">&quot;professor&quot;</span>
             </p>
             <p>
-              Pais: usuário <span className="text-cyan-400">"pai"</span>, senha{" "}
-              <span className="text-cyan-400">"pai"</span>
+              Pais: usuário <span className="text-cyan-400">&quot;pai&quot;</span>, senha{" "}
+              <span className="text-cyan-400">&quot;pai&quot;</span>
             </p>
           </div>
         </div>

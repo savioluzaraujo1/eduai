@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Users, Play, Pause, RefreshCw, Eye, EyeOff, AlertCircle } from "lucide-react"
+import { Users, Play, Pause, RefreshCw, Eye, EyeOff, AlertCircle } from 'lucide-react'
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function AttendanceSimulator() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -110,9 +111,11 @@ export default function AttendanceSimulator() {
             <div className="relative rounded-md overflow-hidden mb-3">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 animate-pulse"></div>
               <div className="relative">
-                <img
+                <Image
                   src="/simulacao-captura.png"
                   alt="Simulação de reconhecimento facial"
+                  width={800}
+                  height={600}
                   className="w-full h-auto object-cover"
                 />
 

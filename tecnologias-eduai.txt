@@ -1,0 +1,100 @@
+# TECNOLOGIAS UTILIZADAS NO PROJETO EDUAI
+=================================================
+
+## VISÃO GERAL
+
+O EduAI é uma plataforma educacional que utiliza inteligência artificial para auxiliar professores e pais no processo de ensino e aprendizagem. Abaixo está um resumo completo de todas as tecnologias, frameworks, bibliotecas e ferramentas utilizadas no desenvolvimento deste projeto.
+
+## LINGUAGENS DE PROGRAMAÇÃO
+
+1. **TypeScript** - Linguagem principal do projeto, oferecendo tipagem estática para JavaScript
+2. **JavaScript** - Utilizado em conjunto com TypeScript para scripts e funcionalidades interativas
+
+## FRAMEWORKS E BIBLIOTECAS PRINCIPAIS
+
+1. **Next.js** - Framework React para desenvolvimento web com renderização do lado do servidor (SSR)
+   - Utiliza o App Router para gerenciamento de rotas
+   - Componentes de servidor e cliente
+   - Otimização de imagens com o componente Image
+
+2. **React** - Biblioteca para construção de interfaces de usuário
+   - Hooks (useState, useEffect, useRef, useCallback)
+   - Componentes funcionais
+   - Context API para gerenciamento de estado
+
+3. **Tailwind CSS** - Framework CSS utilitário para estilização
+   - Classes utilitárias para design responsivo
+   - Personalização através de configuração
+
+4. **shadcn/ui** - Biblioteca de componentes UI baseada em Radix UI
+   - Componentes acessíveis e personalizáveis
+   - Integração com Tailwind CSS
+
+5. **Framer Motion** - Biblioteca para animações em React
+   - Animações de entrada e saída
+   - Transições suaves
+   - Gestos e interações
+
+## BIBLIOTECAS DE COMPONENTES E UTILITÁRIOS
+
+1. **Lucide React** - Biblioteca de ícones
+2. **cmdk** - Biblioteca para criação de interfaces de comando
+3. **Radix UI** - Primitivos de UI acessíveis
+   - Dialog
+   - Toast
+   - Dropdown Menu
+   - Accordion
+
+4. **React Day Picker** - Componente de calendário
+
+## FERRAMENTAS DE DESENVOLVIMENTO
+
+1. **ESLint** - Linter para identificar e corrigir problemas no código
+   - Regras personalizadas para Next.js e React
+   - Integração com TypeScript
+
+2. **Git** - Sistema de controle de versão
+   - Gerenciamento de código-fonte
+   - Colaboração entre desenvolvedores
+
+3. **npm/Yarn** - Gerenciadores de pacotes para JavaScript
+   - Instalação e gerenciamento de dependências
+   - Scripts de automação
+
+## FUNCIONALIDADES DE IA
+
+O projeto inclui integração com APIs de IA para:
+1. Análise de imagens para reconhecimento facial (simulado)
+2. Processamento de linguagem natural para geração de planos de aula
+3. Análise de dados para relatórios de desempenho
+
+## ARQUITETURA E PADRÕES
+
+1. **Arquitetura baseada em componentes**
+   - Componentes reutilizáveis
+   - Separação de responsabilidades
+
+2. **Server Components e Client Components**
+   - Uso de 'use client' para componentes interativos
+   - Renderização no servidor para melhor SEO e performance
+
+3. **Padrão de composição**
+   - Componentes pequenos e focados
+   - Composição para criar interfaces complexas
+
+4. **Estilização com Tailwind e CSS Modules**
+   - Abordagem utilitária com Tailwind
+   - CSS Modules para estilos específicos de componentes
+
+## RECURSOS PLANEJADOS
+
+1. Integração com APIs avançadas de IA (como OpenAI GPT-4o)
+2. Desenvolvimento de prompts específicos para cada funcionalidade
+3. Sistema de avaliação de sugestões da IA
+4. Análise de imagens com conformidade à LGPD
+
+## REQUISITOS DE SISTEMA
+
+- Node.js 18.x ou superior
+- npm 8.x ou Yarn 1.22.x ou superior
+- Navegadores modernos com suporte a ES6+
