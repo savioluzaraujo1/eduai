@@ -1,0 +1,72 @@
+
+=================================================
+
+## 4. SEQUÊNCIA DE COMANDOS PARA SUBIR PARA O GITHUB
+=================================================
+
+### 1. Inicializar um repositório Git local (se ainda não tiver feito)
+
+# Navegue até a pasta do seu projeto
+cd caminho/para/seu/projeto/eduai
+
+# Inicialize um repositório Git
+git init
+
+### 2. Adicionar os arquivos ao staging
+
+# Adicionar todos os arquivos
+git add .
+
+# Alternativamente, você pode adicionar arquivos específicos
+# git add arquivo1.js arquivo2.js pasta/
+
+### 3. Fazer o commit inicial
+
+git commit -m "Versão inicial do projeto EduAI"
+
+### 4. Criar um repositório no GitHub
+
+- Acesse github.com
+- Clique no botão "+" no canto superior direito e selecione "New repository"
+- Dê um nome ao repositório (ex: "eduai" ou "aula-inteligente")
+- Deixe as opções de README, .gitignore e licença desmarcadas
+- Clique em "Create repository"
+
+### 5. Conectar seu repositório local ao GitHub
+
+# Adicione o repositório remoto (substitua 'seu-usuario' e 'nome-do-repositorio')
+git remote add origin https://github.com/seu-usuario/nome-do-repositorio.git
+
+# Verifique se o remote foi adicionado corretamente
+git remote -v
+
+### 6. Enviar o código para o GitHub
+
+# Envie o código para o branch principal
+git push -u origin main
+
+# Se estiver usando 'master' em vez de 'main' (versões mais antigas do Git)
+# git push -u origin master
+
+### 7. Verificar se tudo deu certo
+
+- Acesse seu repositório no GitHub para confirmar que os arquivos foram enviados corretamente
+- A URL será: https://github.com/seu-usuario/nome-do-repositorio
+
+### Comandos adicionais úteis
+
+# Verificar o status dos arquivos
+git status
+
+# Ver o histórico de commits
+git log
+
+# Criar e mudar para um novo branch
+git checkout -b nome-do-branch
+
+# Atualizar seu repositório local com as mudanças do GitHub
+git pull origin main
+
+=================================================
+# FIM DO GUIA
+=================================================
